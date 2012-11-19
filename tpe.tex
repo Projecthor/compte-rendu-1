@@ -38,7 +38,7 @@ Notre projet consiste en un adversaire mécanique pour un jeu dont les règles s
 Le robot doit en début de partie être placé manuellement devant le centre de la cible : un laser pointeur est prévu à cet effet. La distance à la cible ne doit pas excéder 4m (distance non définitive). Une fois placé, on allume le robot avec un interrupteur équipé d'un indicateur sous forme de LED. Après quelques secondes, la LED doit se mettre à clignoter. À ce moment, vous pouvez vous y connecter à partir du programme android fourni avec le robot.
 
 \subsubsection{Le programme}
-Le programme communiquera avec le robot par Wifi. Il doit permettre de lancer une partie, choisir le niveau de difficulté ainsi que le nombre de billes par joueur, et indiquer au robot quand tirer.
+Le programme a pour but de fournir une interface utilisateur simple pour contrôler le lanceur depuis un smartphone ou tablette Android par WiFi. Il doit permettre de lancer une partie, choisir le niveau de difficulté ainsi que le nombre de billes par joueur, et indiquer au robot quand tirer.
 \paragraph{Téléchargement} Le programme sera stocké sous forme d'un fichier apk sur le compte github du projet et téléchargeable à \href{https://github.com/Lanceur-billes-TPE/compte-rendu-1/downloads}{cette adresse}. Si possible, il sera aussi disponible sur Google Play.
 
 \subsubsection{Le robot}
@@ -51,7 +51,7 @@ Le programme communiquera avec le robot par Wifi. Il doit permettre de lancer un
 \end{figure}
 
 Une fois placé (donc lors de l'allumage), le robot calcule sa distance à la cible à l'aide d'un module sonar. Durant une partie, en fonction du niveau de difficulté choisi par l'utilisateur, il va déterminer pour chaque bille une position aléatoire. Ceci fait, il va calculer l'angle dans lequel il doit se placer et va tirer. Le canon peut pivoter dans une fenêtre de 45\degre avec une précision d'un demi degré. Puis il reste dans sa position jusqu'à ce qu'on lui indique de tirer à nouveau ou que la partie soit terminée.
-\paragraph{Matériel} Les calculs seront réalisé sur une carte \emph{Arduino Duemilanove}, la communication Wifi par le shield officiel d'arduino, le positionnement par un moteur pas à pas et le tir par un \emph{canon Gauss}.
+\paragraph{Matériel} Les calculs seront réalisé sur une carte \emph{Arduino Duemilanove}, la communication WiFi par le shield officiel d'arduino, le positionnement par un moteur pas à pas et le tir par un \emph{canon Gauss}.
 \paragraph{} Les différentes fonctions de services sont présentées dans le diagramme pieuvre page \pageref{pieuvre}.
 
 \subsubsection{L'alimentation}

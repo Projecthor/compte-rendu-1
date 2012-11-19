@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[francais]{babel}
-\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage[top=2cm, bottom=2cm, left=3cm, right=3cm]{geometry}
 \usepackage{tabularx}
 \usepackage{graphics}
 \usepackage{hyperref}
@@ -52,10 +52,9 @@ Le programme a pour but de fournir une interface utilisateur simple pour contrô
 
 Une fois placé (donc lors de l'allumage), le robot calcule sa distance à la cible à l'aide d'un module sonar. Durant une partie, en fonction du niveau de difficulté choisi par l'utilisateur, il va déterminer pour chaque bille une position aléatoire. Ceci fait, il va calculer l'angle dans lequel il doit se placer et va tirer. Le canon peut pivoter dans une fenêtre de 45\degre avec une précision d'un demi degré. Puis il reste dans sa position jusqu'à ce qu'on lui indique de tirer à nouveau ou que la partie soit terminée.
 \paragraph{Matériel} Les calculs seront réalisé sur une carte \emph{Arduino Duemilanove}, la communication WiFi par le shield officiel d'arduino, le positionnement par un moteur pas à pas et le tir par un \emph{canon Gauss}.
-\paragraph{} Les différentes fonctions de services sont présentées dans le diagramme pieuvre page \pageref{pieuvre}.
-
-\subsubsection{L'alimentation}
+\paragraph{L'alimentation}
 L'alimentation sera assurée par deux piles de 9V.
+\paragraph{Fonctions de service} Les différentes fonctions de services sont présentées dans le diagramme pieuvre page \pageref{pieuvre}.
 
 \section{Répartition des tâches}
 \begin{center}

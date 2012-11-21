@@ -5,27 +5,27 @@
 	[clockwise from=0]
 	child[concept color=red] { 
 		node[concept] (billes) {Billes}
-		node[annotation,right] at (billes.south west) {FP1 : Lancer};
+		node:annotation,right,text=black] at (billes.south west) {FP1 : Lancer};
 	}
 	child[concept color=red] { 
 		node[concept] (cible) {Cible} 
-		node[annotation,right] at (cible.south west) {FP2 : Capter la distance};
+		node[annotation,right,text=black] at (cible.south west) {FP2 : Capter la distance};
 	}
 	child[concept color=blue] { 
 		node[concept] (user) {Utilisateur}
-		node[annotation,right] at (user.south west) {FC1 : Allumage / extinction};
+		node[annotation,right,text=black] at (user.south west) {FC1 : Allumage / extinction};
 	}
 	child[concept color=blue] { 
 		node[concept] (sec) {Sécurité} 
-		node[annotation,right] at (sec.north west) {FC2 : Ne pas tirer sur un obstacle humain};
+		node[annotation,right,text=black] at (sec.north west) {FC2 : Ne pas tirer sur un obstacle humain};
 	}
 	child[concept color=blue] { 
 		node[concept] (android) {Périphérique android} 
-		node[annotation,right] at (android.north west) {FC3 : Communiquer par WiFi};
+		node[annotation,right,text=black] at (android.north west) {FC3 : Communiquer par WiFi};
 	}
 	child[concept color=blue] { 
 		node[concept] (ener) {Énergie} 
-		node[annotation,right] at (ener.north west) {FC4 : Utiliser une source portable};
+		node[annotation,right,text=black] at (ener.north west) {FC4 : Utiliser une source portable};
 	};
 
 	\path (root) to[circle connection bar switch color=from (black) to (red)] (billes);

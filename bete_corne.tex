@@ -1,0 +1,12 @@
+
+\begin{tikzpicture}
+	% Le texte
+	\draw (0,3) node [fill=blue,text=white] (util) {\textbf{Personne désœuvrée}};
+	\draw (5,3) node [fill=blue,text=white] (dest) {\textbf{Des billes}};
+	\draw (2.5,1.5) node [fill=red,text=white] (obj) {\Large \textbf{Lanceur de billes}};
+	\draw (2.5,0) node [fill=blue,text=white] (how) {\textbf{Divertir l'utilisateur}};
+
+	% Les liens
+	\draw [->,thick] (util.south) .. controls (obj.center) .. (dest.south);
+	\draw [->,thick] (dest.south) .. controls (obj.center) .. (how.north);
+\end{tikzpicture}

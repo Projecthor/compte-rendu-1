@@ -5,27 +5,27 @@
 	[clockwise from=0]
 	child[concept color=red] { 
 		node[concept] (billes) {Billes}
-		node[annotation,right,text=black] at (billes.south west) {FP1 : Lancer};
+		node[annotation,right,text=black] at (billes.south west) {FP1};
 	}
 	child[concept color=red] { 
 		node[concept] (cible) {Cible} 
-		node[annotation,right,text=black] at (cible.south west) {FP2 : Capter la distance};
+		node[annotation,right,text=black] at (cible.south west) {FP1\\FC5};
 	}
 	child[concept color=blue] { 
 		node[concept] (user) {Utilisateur}
-		node[annotation,right,text=black] at (user.south west) {FC1 : Allumage / extinction};
+		node[annotation,right,text=black] at (user.south west) {FC1};
 	}
 	child[concept color=blue] { 
 		node[concept] (sec) {Sécurité} 
-		node[annotation,right,text=black] at (sec.north west) {FC2 : Ne pas tirer sur un obstacle humain};
+		node[annotation,right,text=black] at (sec.north west) {FC2};
 	}
 	child[concept color=blue] { 
 		node[concept] (android) {Périphérique android} 
-		node[annotation,right,text=black] at (android.north west) {FC3 : Communiquer par WiFi};
+		node[annotation,right,text=black] at (android.north west) {FC3};
 	}
 	child[concept color=blue] { 
 		node[concept] (ener) {Énergie} 
-		node[annotation,right,text=black] at (ener.north west) {FC4 : Utiliser une source portable};
+		node[annotation,right,text=black] at (ener.north west) {FC4};
 	};
 
 	\path (root) to[circle connection bar switch color=from (black) to (red)] (billes);
@@ -34,5 +34,22 @@
 	\path (root) to[circle connection bar switch color=from (black) to (blue)] (sec);
 	\path (root) to[circle connection bar switch color=from (black) to (blue)] (android);
 	\path (root) to[circle connection bar switch color=from (black) to (blue)] (ener);
+	\path (billes) to[circle connection bar switch color=from (red) to (red)] (cible);
 \end{tikzpicture}
+
+\begin{tabular}{|l|c|}
+	\hline
+	FP1 & Lancer la bille sur la cible \\
+	\hline
+	FC1 & Allumage extinction \\
+	\hline
+	FC2 & Ne pas tirer sur un humain \\
+	\hline
+	FC3 & Communiquer par WiFi \\
+	\hline
+	FC4 & Utiliser une source d'énergie portable \\
+	\hline
+	FC5 & Capter la distance à la cible \\
+	\hline
+\end{tabular}
 
